@@ -1,2 +1,3 @@
-# glitch
-a happy places for glitches
+Welcome to the Jaanga BETA
+=========================
+
