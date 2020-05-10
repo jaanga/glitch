@@ -1,11 +1,30 @@
-/* CSS files add styling rules to your content */
+/* Copyright 2020 Theo Armour. MIT License */
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
-}
+:root { font: 100% monospace; }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
-}
+* { box-sizing: border-box; }
+
+body { margin: 0; overflow: hidden; }
+
+a { color: crimson; text-decoration: none; }
+a:hover, a:focus, a:active { background-color: yellow; color: #aaa; text-decoration: underline; }
+
+button { background-color: #ddd; border: none; border-radius: 2px; color: #322;cursor: pointer; padding: 3px 5px; }
+button:hover { background: #ccc; color: #fff }
+
+input[ type=range ] { -webkit-appearance: none; -moz-appearance: none; background-color: #ddd; border-radius: 2px; height: 1.7ch; width: 100%; }
+input[ type=range ]::-moz-range-thumb { background-color: #888; border-radius: 2; width: 10px; }
+input[ type=range ]::-webkit-slider-thumb { -webkit-appearance: none; background-color: #888; height: 18px; width: 10px; }
+
+.info { float: right }
+
+.info:hover>.infotooltip { display: block; }
+
+.infotooltip { border: 0.8ch double #888; background: white; display: none;
+	font: 100% monospace; font-size: 1rem; font-weight: normal; /* unset summary settings */
+	margin-left: -28ch; padding: 10px; position: absolute; z-index: 1000; }
+
+.navText { background-color: white; margin: 1ch 0; padding: 1ch; }
+
+#navMenu { margin: 0 20px; max-width: 15rem; position: absolute; }
+
